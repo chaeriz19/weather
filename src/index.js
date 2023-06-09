@@ -10,7 +10,6 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route  index path='/' element={<Home />}/>
-
     </Routes>
   </BrowserRouter>
   

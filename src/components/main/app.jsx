@@ -11,13 +11,15 @@ export default function Home() {
 
   async function weatherdata(country) {
     setLoading(true);
-    setInterval(() => {
+    try {
+        let response = await fetch(API_KEY + country);
+        const data = await response.json();
+        setData(data);
+    } catch (e) {
+        console.error(e);
+    } finally {
         setLoading(false);
-    }, 1000);
-    let response = await fetch(API_KEY + country);
-    const data = await response.json();
-    setData(data);
-    console.log(data);
+    }
   }
 
   function handlePopular(i) {
