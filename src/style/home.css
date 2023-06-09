@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+.form {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.form > button {
+    width: 100px;
+    border: none;
+    padding: 1.15rem;
+    margin-left: .25rem;
+    border-radius: 8px;
+
+}
+.form > input{
+    border: none;
+    border-radius: 8px;
+    border: solid black 2px;
+    width: 150px;
+    padding: 1rem;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: #393939;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: .5rem;
+    height: 30px;
+    
+}
+.header > ul > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
+.header-text {
+    margin: 0 1rem;
+} 
+.footer {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9f1fb;
+    height: 150px;
+    margin-top: 5rem;
+}
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.data {
+    padding: 2rem;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.data:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
+}
+.popular {
+
+}
+.popular > button {
+    padding: 1rem;
+    margin: 0 2px;
+    border: none;
+    border-radius: 8px;
+
+}
+.popular > button:hover {
+    background-color: lightblue;
+}
