@@ -3,12 +3,19 @@ body {
     padding: 0;
 
 }
+button {
+    cursor: pointer;
+}
+button:hover {
+    background-color: lightblue;
+
+}
 .form {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 .form > button {
-    width: 100px;
+    width: 125px;
     border: none;
     padding: 1.15rem;
     margin-left: .25rem;

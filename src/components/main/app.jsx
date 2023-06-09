@@ -75,7 +75,6 @@ export default function Home() {
               <div className="popular">
                 <p>Or, choose a popular city</p>
                 <h1>Popular</h1>
-
                 <button onClick={() => handlePopular("zwolle")}>Zwolle</button>
                 <button onClick={() => handlePopular("utrecht")}>Utrecht</button>
                 <button onClick={() => handlePopular("amsterdam")}>Amsterdam</button>
