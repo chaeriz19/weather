@@ -17,8 +17,11 @@ export default function Home() {
         setData(data);
     } catch (e) {
         console.error(e);
-    } finally {
+    }finally {
+        setInterval(() => {
         setLoading(false);
+          
+        }, 500);
     }
   }
 
@@ -31,7 +34,6 @@ export default function Home() {
   let LOCATION_TEMP_C = "";
   let LOCATION_IMG = "";
   let LOCATION_CONDITION_TEXT = "";
-
   if (data && data.location && data.current) {
     LOCATION_NAME = data.location.name;
     LOCATION_TEMP_C = data.current.temp_c;

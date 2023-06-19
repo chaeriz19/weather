@@ -7,13 +7,12 @@ import App from './main/app.jsx';
 export default function Main() {
 
     const [ loading , setLoading ] = useState(false);
-    const [ input, setInput ] = useState(false);
     
     useEffect(() => {
         setLoading(true);
         setInterval(() => {
             setLoading(false);
-        }, 350);
+        }, 500);
         document.title = 'Home';
     }, []);
     return (
@@ -24,7 +23,7 @@ export default function Main() {
             : (
                 <App />
             )
-        }
+            }
         </div>
         
     )
