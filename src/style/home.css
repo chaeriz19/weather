@@ -82,7 +82,7 @@ button:hover {
     width: 250px;
     text-align: center;
     border-radius: 8px;
-    background-color: rgba(232, 230, 230, 0.89);
+    background-color: rgba(254, 254, 254, 0.89);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .data:hover {
@@ -101,4 +101,7 @@ button:hover {
 }
 .popular > button:hover {
     background-color: lightblue;
+}
+.flag {
+    width: 200px;
 }

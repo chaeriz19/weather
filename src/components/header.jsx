@@ -4,7 +4,10 @@ import { BsFillCloudDrizzleFill } from "react-icons/bs";
 export default function Header() {
 
     const data = [
-        {location: "/", name: "Home"}];
+        {location: "/", name: "Home"},
+        {location: "/countries", name: "Countries"},
+        ];
+
     return (
         <div className="header">
             <h1 className="header-text"> { <BsFillCloudDrizzleFill /> } Weather</h1>

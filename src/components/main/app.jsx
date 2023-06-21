@@ -9,6 +9,12 @@ export default function Home() {
   const API_KEY =
     "https://api.weatherapi.com/v1/current.json?key=2a0cb2d64586439386c75804230906&q=";
 
+    useEffect(() => {
+      setLoading(true);
+      setInterval(() => {
+        setLoading(false);
+      }, 500);
+    }, []);
   async function weatherdata(country) {
     setLoading(true);
     try {
@@ -19,8 +25,7 @@ export default function Home() {
         console.error(e);
     }finally {
         setInterval(() => {
-        setLoading(false);
-          
+          setLoading(false);
         }, 500);
     }
   }
