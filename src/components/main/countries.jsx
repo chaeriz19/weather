@@ -16,6 +16,7 @@ export default function Countries() {
 
     async function data(input) {
         if (!input) return;
+        if (input == "") return;
         let response = await fetch(API + input);
         let datajson = await response.json();
         setcountryData(datajson[0]);
@@ -45,7 +46,7 @@ export default function Countries() {
               Search
             </button>
           </form>
-                    </div>
+                </div>
                     { countrydata ? (
                         <div className='data'> 
                             <div> <img className='flag' src={countrydata.name && countrydata.flags.png }></img></div>
@@ -55,7 +56,7 @@ export default function Countries() {
                             <div>Borders: {countrydata.name && countrydata.borders.join(', ')}</div>
                         </div>
                     ) : (
-                        <div></div>
+                        <div>Search for a country ..</div>
                     )
 
                     }
