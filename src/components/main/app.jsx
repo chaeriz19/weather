@@ -6,10 +6,9 @@ export default function Home() {
   const [input, setInput] = useState("");
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const API_KEY =
-    "https://api.weatherapi.com/v1/current.json?key=2a0cb2d64586439386c75804230906&q=";
+  const API_KEY ="https://api.weatherapi.com/v1/current.json?key=2a0cb2d64586439386c75804230906&q="; 
 
-    useEffect(() => {
+  useEffect(() => {
       setLoading(true);
       setInterval(() => {
         setLoading(false);

@@ -13,8 +13,7 @@ export default function Header() {
             <h1 className="header-text"> { <BsFillCloudDrizzleFill /> } Weather</h1>
             <ul>
             {data.map(({ location, name }, index) => (
-            <a key={index} href={location}>
-                 {name}
+            <a key={index} href={location}>{name}
             </a>
             ))}
             </ul>

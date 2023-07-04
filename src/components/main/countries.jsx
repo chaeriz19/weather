@@ -8,7 +8,6 @@ export default function Countries() {
   const [loading, setLoading] = useState(false);
   const [countrydata, setcountryData] = useState({});
   useEffect(() => {
-    data("netherlands");
     setLoading(true);
     setInterval(() => {
       setLoading(false);
