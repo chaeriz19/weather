@@ -21,7 +21,6 @@ export default function Countries() {
     let datajson = await response.json();
     setcountryData(datajson[0]);
   }
-
   const countries = [
     { label: "China" },
     { label: "India" },
